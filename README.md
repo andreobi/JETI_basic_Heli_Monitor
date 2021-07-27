@@ -1,5 +1,7 @@
 # JETI_basic_Heli_Monitor
 
+The SW is provided as it is without any resposibility, warranty or laibility.
+
 This lua app provides the following functions:
 
 - provide an alram when the compentated battery voltage drops for more the 250ms under a adujustable cell level (default 3.65V)
