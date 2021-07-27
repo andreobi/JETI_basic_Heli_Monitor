@@ -11,5 +11,6 @@ This lua app provides the following functions:
 The compentated battery voltage is: measured voltage / cell number + measured current * defined battery Ri
 
 RPM monitor assumes 10s + change time to rampup the RPM from autorotation or motor off
+
 There has to be a little RPM grow until the threshold (level 1..3) is reached
 
