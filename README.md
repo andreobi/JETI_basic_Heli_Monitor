@@ -16,3 +16,4 @@ RPM monitor assumes 10s + change time to rampup the RPM from autorotation or mot
 
 There has to be a little RPM grow until the threshold (level 1..3) is reached
 
+2.17 fix: capacity announcement
