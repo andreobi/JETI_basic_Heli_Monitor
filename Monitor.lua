@@ -361,7 +361,6 @@ local function loop()
 
 --Capa
 		local senCapa = system.getSensorByID(slIdCapa, slParCapa)
-
 		if(senCapa) then
 			if (senCapa.valid) then
 				if (senCapa.value > slCapa*0.75) then
@@ -545,9 +544,9 @@ local function loop()
 			if (capaTime < curTime) then
 				capaTime = curTime + slAlPeriod*1000
 				alCntCapa = alCntCapa -1
+				system.playNumber (senCapa.value, 0, "mAh")
 				if (alCntCapa > 0) then
 					alCntCapa = alCntCapa -1
-					system.playNumber (senCapa.value, 0, "mAh")
 					system.messageBox("Capa",2)
 				end
 			end
@@ -644,4 +643,4 @@ local function init()
 end
 ----------------------------------------------------------------------
 
-return {init=init, loop=loop, author="Andre", version="2.16", name=appName}
+return {init=init, loop=loop, author="Andre", version="2.17", name=appName}
